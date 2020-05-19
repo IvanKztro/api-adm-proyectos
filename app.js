@@ -24,9 +24,7 @@ app.use("/api/proyectos", require('./routes/proyectos') );
 app.use("/api/tareas", require('./routes/tareas') );
 app.use("/api/auth", require('./routes/auth') );
 
-app.get("/", (req, res) => {
-    res.send("hola mundo");
-} )
+
 
 app.listen(port, '0.0.0.0', () => {
     console.log(`Servidor en marcha en puerto: ${port}`);
